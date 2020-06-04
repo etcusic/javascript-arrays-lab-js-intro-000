@@ -24,3 +24,15 @@ var destructivelyRemoveFirstKitten = function (name){
 var appendKitten = function(name){
   return kittens.concat(name)
 }
+
+var prependKitten = function(name){
+  return name.concat(kittens)
+}
+
+var removeLastKitten = function(){
+  return kittens.slice(0, (kittens.length - 1))
+}
+
+var removeFirstKitten = function(){
+  return kittens.slice(1)
+}
